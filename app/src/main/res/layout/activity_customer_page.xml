@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cput.ac.za.companymanager.Views.Customer_page"
+    android:background="#3fa5ff"
+    >
+
+    TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/imgV_CustomerLogo"
+        android:src="@drawable/mylogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/resCustomersHeader"
+        android:id="@+id/txtCustomersHeader"
+        android:layout_alignTop="@+id/imgV_CustomerLogo"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resBtnAddCustomer"
+        android:onClick="openCustomerDetails"
+        android:layout_below="@+id/imgV_CustomerLogo"
+        android:layout_alignEnd="@+id/txtCustomersHeader"
+        android:id="@+id/btnAddCustomer" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListCustomers"
+        android:layout_alignEnd="@+id/imgV_CustomerLogo"
+        android:layout_below="@+id/btnAddCustomer" />
+
+</RelativeLayout>

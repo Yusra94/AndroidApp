@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cput.ac.za.companymanager.Views.Sign_in"
+    android:background="#3fa5ff"
+    android:id="@+id/RelLayout_SignIn">
+
+    TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resBtnLogIn"
+        android:id="@+id/btnLogIn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="136dp"
+        android:onClick="callMainMenu"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPassword"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/resTxtPassword"
+        android:background="#f0e0ff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsername"
+        android:layout_above="@+id/txtPassword"
+        android:layout_alignStart="@+id/txtPassword"
+        android:layout_marginBottom="52dp"
+        android:layout_alignEnd="@+id/txtPassword"
+        android:text="@string/resTxtUsername"
+        android:background="#f6ebff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/resSignInHeader"
+        android:id="@+id/headerSignIn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/ImgV_Logo_SignIn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="false"
+        android:src="@drawable/mylogo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resBtnExitApp"
+        android:id="@+id/btnExitApp"
+        android:layout_alignTop="@+id/btnLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:onClick="finishActivity"
+        />
+</RelativeLayout>

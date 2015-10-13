@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cput.ac.za.companymanager.Views.Main_Menu"
+    android:background="#3fa5ff"
+    >
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/imgV_CustomerLogo"
+        android:src="@drawable/mylogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/resMainMenuHeader"
+        android:id="@+id/txtMainMenuHeader"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/resBtnCustomersMain"
+        android:id="@+id/btnCustomersMain"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="startCustomers"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/resBtnOrdersMain"
+        android:id="@+id/btnOrdersMain"
+        android:layout_below="@+id/btnCustomersMain"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/resBtnExitMain"
+        android:id="@+id/btnBackMain"
+        android:layout_below="@+id/btnOrdersMain"
+        android:layout_centerHorizontal="true"
+        android:onClick="finishActivity"/>
+</RelativeLayout>

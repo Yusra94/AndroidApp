@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cput.ac.za.companymanager.Views.Main_Page"
+    android:background="#3fa5ff"
+    android:id="@+id/Rel_layout_main">
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/imgV_CustomerLogo"
+        android:src="@drawable/mylogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:textSize="20dp"
+        android:text="Duma Chemicals is a small business that manufactures household and industrial cleaning products. We currently have 2 branches, one in Cape Town, and one in Durban. We offer our services to a variety of company in many different industries. Our products are made from the finest of ingredients that are safe to use in any environment, and also gives the best clean!"
+        android:id="@+id/txtView_MainPage"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="147dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:text="Sign In"
+        android:id="@+id/btnSignInMain"
+        android:background="#fefff7"
+        android:onClick="callSignIn"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

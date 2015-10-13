@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cput.ac.za.companymanager" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/favicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Views.Main_Page"
+            android:label="@string/title_activity_main__page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Views.Sign_in"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
+            android:name=".Views.Main_Menu"
+            android:label="@string/title_activity_main__menu" >
+        </activity>
+        <activity
+            android:name=".Views.Customer_page"
+            android:label="@string/title_activity_customer_page" >
+        </activity>
+        <activity
+            android:name=".Views.Customer_Details"
+            android:label="@string/title_activity_customer__details" >
+        </activity>
+        <activity
+            android:name=".Views.Orders_Page"
+            android:label="@string/title_activity_orders__page" >
+        </activity>
+        <activity
+            android:name=".Views.Order_Details"
+            android:label="@string/title_activity_order__details" >
+        </activity>
+    </application>
+
+</manifest>
